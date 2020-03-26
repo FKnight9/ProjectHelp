@@ -1,0 +1,58 @@
+{
+    "name": "projecthelp",
+    "version": "1.0.0",
+    "description": "Helping at-risk people retrieve necessities during the COVID-19 pandemic",
+    "main": "server",
+    "scripts": {
+        "dev": "nodemon server",
+        "build": "next build",
+        "start": "next",
+        "build-semantic": "cd semantic && gulp build-css build-assets",
+        "watch-semantic": "cd semantic && npm run build-semantic && gulp watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FKnight9/ProjectHelp.git"
+    },
+    "keywords": [
+        "coronavirus",
+        "COVID-19",
+        "volunteer",
+        "help"
+    ],
+    "author": "Faris Ibrahim",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/FKnight9/ProjectHelp/issues"
+    },
+    "homepage": "https://github.com/FKnight9/ProjectHelp#readme",
+    "proxy": "http://localhost:3000/",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.9.5",
+        "next": "^9.3.1",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
+        "react-geocode": "^0.2.1",
+        "react-geolocated": "^3.0.1",
+        "react-places-autocomplete": "^7.2.1",
+        "semantic-ui-react": "^0.88.2"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.19.0",
+        "eslint-plugin-react-hooks": "^2.5.0",
+        "fomantic-ui": "^2.8.4",
+        "gulp": "^4.0.2",
+        "prettier": "^1.19.1"
+    }
+}
